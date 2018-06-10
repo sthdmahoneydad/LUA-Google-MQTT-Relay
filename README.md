@@ -1,7 +1,29 @@
 # LUA-Google-MQTT-Relay
 
 Use Google Assistant 
-IFTT -> connect to Adafruit.io 
+For If portion of IfThisthenThat, use Google Assistant for IFTT to handle google assitant command and send to Adafruit.io 
+
+Choose simple phrase…
+
+"Turn Off my LED Light"
+Respond with
+"OK, turning off LED Light"
+ 
+
+Select Create trigger button
+
+Choose 'That' portion, Select ‘+’ for that action service which is "adaFruit"
+Select Send Data
+
+Select Feed Name setup in AdaFruit
+"ONOFF" Feed
+Data to Save: Off
+
+Select Create Action button
+
+* Repeat process for Turning on the LED Lights....
+
+
 
 adafruit.io has MQTT topic
 
