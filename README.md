@@ -128,9 +128,20 @@ Local:
 		Select Save to ESP 
 		Select RUN
 
+		Files: 
+			- init.lua - startup script - defines IO PIN for relay and call to setup WiFi
+			- wifi-svc.lua - handles wifi connection
+			- wifi-creds.lua - stores you local wifi credentials
+			- handleWiFiConnected.lua - called on wifi connection(put code to do what you want ie startup MQTT client)
+			- relay-switch.lua - assing input/out mode to pin, toggle, turn-on/off
+			- mqtt-svc.lua - MQTT client for subscribing to topic
+			- MQTT-io-adafruit-creds.lua - stores credentials for io.adafruit mqtt topic
+			- handleTopicData-On.lua - invoked when MQTT topic recieves On message calls relay turnOn
+			- handleTopicData-Off.lua - invoked when MQTT topic recieves On message calls relay turnOff
+			
+			
 
-
-	init.lua for Startup the NodeMCU :
+		init.lua for Startup the NodeMCU :
 			requires relay-switch.lua & wifisvc.lua  
 			
 			Defines the digital IO Pin for the relay and initializes it to set to output mode
