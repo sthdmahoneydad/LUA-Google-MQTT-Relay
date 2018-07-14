@@ -62,13 +62,13 @@ Local:
 		1) used USB to power NodeMCU
 		2) connect NodeMUC to Relay for turning on/off
 			a) 3.3V to middle pin on my 5V relay(circuit side)
-			b) Ground to last pin on 5V relay
-			c) Digital Pin 8 to 1st pin on relay(should match what is defined in init.lua script)
+			b) Ground to last pin on 5V relay(circuit side)
+			c) Digital Pin 8(should match what is defined in init.lua script) to 1st pin on relay(circuit side)
 			-- device to power on / off
 			d) Ground from power source goes to Target Device(LED Light Strip)
 			-- insert relay into target device supply of power
-			e) Positive from power source goes to Relay first position
-			f) Relay second position goes to  Target Device(LED Light Strip).
+			e) Positive from power source goes to Relay first position(Power post side)
+			f) Relay second position(Power post side) goes to  Target Device(LED Light Strip).
 
 
 
