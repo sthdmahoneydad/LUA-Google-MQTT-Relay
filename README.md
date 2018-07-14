@@ -185,7 +185,8 @@ function mqttCreds.getTopic()
     return "YOUR-ACCT-TOPIC"
 end
 
-return mqttCreds
+return mqtttCreds
+
 ----------------------------------
 
 
@@ -206,6 +207,5 @@ end
 
 
 return wifiCreds
-
 
 ------------------------------------------
