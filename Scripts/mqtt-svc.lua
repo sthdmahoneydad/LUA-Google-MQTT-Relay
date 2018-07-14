@@ -6,15 +6,6 @@ wifiSvc = require "wifi-svc"
 
 function mqttSvc.startUpMQTT()
   --Subscribe to the onoff topic
-  --WiFiClient client;
-  --Adafruit_MQTT_Client mqtt(&client, MQTT_SERV, MQTT_PORT, MQTT_NAME, MQTT_PASS);
-    
-  --Adafruit_MQTT_Subscribe onoff = Adafruit_MQTT_Subscribe(&mqtt, MQTT_NAME "/f/onoff");
-
-  --mqtt.subscribe(&onoff);
-
-   --mqttClient = mqtt.Client(mqttHost, mqttPort, mqttTimeOut, mqttUserID, mqttPass)
-
     
     -- init mqtt client with logins, keepalive timer 120sec
     print("start up MQTT....")

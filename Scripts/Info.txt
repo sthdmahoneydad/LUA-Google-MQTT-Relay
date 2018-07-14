@@ -1,0 +1,31 @@
+Custom Firmware: 
+https://nodemcu-build.com/
+
+
+This was built against the master branch and includes the following modules: adc, file, gpio, mqtt, net, node, tmr, uart, websocket, wifi, tls.
+
+*** Float seems to work better for me.
+
+
+-- need drivers for this.
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
+
+-- if you use integer version, smaller footprint, but not floating point decimals supported.
+-- Verify the COM port!
+
+To flash NodeMCU with firmware 
+
+-- IF YOU have already install esptool.py using: pip install esptool
+then you can use esptool.py(NO PYTHON cmd before)
+
+C:\dev\NodeMCU\Firmware\ADC-WebSocket-MQTT-WIFI>esptool.py --baud 115200 --port COM12 write_flash -fs 4MB -ff 80m --flash_mode dio 0x00000 nodemcu-master-11-modules-2018-04-15-00-39-22-float.bin
+
+
+
+
+---- Run Esplorer.bat
+
+*** I Needed JDK 1.8 version 10 was causing error in esplorer.
+
+
+
